@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussões
+    url: https://github.com/digossmi/home-assistant-redgtech-automacao/discussions
+    about: Tire dúvidas, compartilhe experiências e discuta sobre a integração
+  - name: 📖 Documentação
+    url: https://github.com/digossmi/home-assistant-redgtech-automacao/blob/main/README.md
+    about: Leia a documentação completa da integração
+  - name: 🌐 Site Redgtech
+    url: https://redgtech.com.br
+    about: Visite o site oficial da Redgtech

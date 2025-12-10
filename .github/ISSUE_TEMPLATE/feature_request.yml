@@ -1,0 +1,63 @@
+name: Feature Request
+description: Sugerir uma nova funcionalidade ou melhoria
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir melhorias! Descreva sua ideia abaixo.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema Relacionado
+      description: Esta feature está relacionada a algum problema? Descreva.
+      placeholder: "Estou sempre frustrado quando..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Proposta
+      description: Descreva a solução que você gostaria de ver implementada
+      placeholder: Descreva sua ideia...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Você considerou outras soluções ou workarounds?
+      placeholder: Descreva alternativas que você já tentou ou considerou...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      description: Quão importante é esta feature para você?
+      options:
+        - Baixa - seria legal ter
+        - Média - melhoraria bastante a experiência
+        - Alta - essencial para meu uso
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribuição
+      description: Você estaria disposto a ajudar com esta feature?
+      options:
+        - label: Posso ajudar a testar esta feature
+        - label: Posso ajudar a desenvolver esta feature
+        - label: Posso ajudar a documentar esta feature
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contexto Adicional
+      description: Adicione qualquer outro contexto, screenshots ou exemplos
+      placeholder: Qualquer informação adicional que ajude a entender sua sugestão...

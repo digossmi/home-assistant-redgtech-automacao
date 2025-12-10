@@ -1,0 +1,103 @@
+name: Bug Report
+description: Reportar um problema ou comportamento inesperado
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um bug! Por favor, preencha as informações abaixo para nos ajudar a resolver o problema.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Bug
+      description: Descreva claramente o problema que você está enfrentando
+      placeholder: Explique o que está acontecendo de errado...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para Reproduzir
+      description: Como podemos reproduzir este problema?
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '...'
+        3. Role até '...'
+        4. Veja o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento Esperado
+      description: O que você esperava que acontecesse?
+      placeholder: Descreva o comportamento esperado...
+    validations:
+      required: true
+
+  - type: input
+    id: ha-version
+    attributes:
+      label: Versão do Home Assistant
+      description: Qual versão do Home Assistant você está usando?
+      placeholder: ex. 2023.12.0
+    validations:
+      required: true
+
+  - type: input
+    id: integration-version
+    attributes:
+      label: Versão da Integração
+      description: Qual versão desta integração você está usando?
+      placeholder: ex. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: board-type
+    attributes:
+      label: Modelo da Placa
+      description: Qual modelo de placa Redgtech você está usando?
+      options:
+        - 8 Canais
+        - 16 Canais
+        - 32 Canais
+    validations:
+      required: true
+
+  - type: dropdown
+    id: connection-type
+    attributes:
+      label: Tipo de Conexão
+      description: Como a placa está conectada?
+      options:
+        - Apenas IP Primário (Cabo)
+        - IP Primário + Secundário (Cabo + WiFi)
+        - Apenas WiFi
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs Relevantes
+      description: Cole aqui os logs do Home Assistant (se disponíveis)
+      placeholder: |
+        Ative logs debug adicionando ao configuration.yaml:
+        
+        logger:
+          default: info
+          logs:
+            custom_components.redgtech_automacao: debug
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação relevante sobre o problema
+      placeholder: Screenshots, configurações especiais, etc.
