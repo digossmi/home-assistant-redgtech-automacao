@@ -1,0 +1,13 @@
+{
+    "domain": "redgtech_automacao",
+    "name": "Redgtech Automação",
+    "codeowners": ["@digossmi"],
+    "config_flow": true,
+    "documentation": "https://github.com/digossmi/home-assistant-redgtech-automacao",
+    "issue_tracker": "https://github.com/digossmi/home-assistant-redgtech-automacao/issues",
+    "integration_type": "device",
+    "iot_class": "local_polling",
+    "requirements": ["aiohttp"],
+    "version": "1.0.0",
+    "icon": "mdi:home-automation"
+}

@@ -1,0 +1,6 @@
+DOMAIN = "redgtech_automacao"
+CONF_NUM_BOARDS = "num_boards"
+CONF_BOARD_IP = "board_ip"
+CONF_BOARD_IP_SECONDARY = "board_ip_secondary"
+CONF_BOARD_NAME = "board_name"
+CONF_NUM_CHANNELS = "num_channels"
